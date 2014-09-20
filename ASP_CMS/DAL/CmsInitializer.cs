@@ -37,7 +37,7 @@ namespace ASP_CMS.DAL
             new Content{page_Id=2,content="Monday to Saterday",visible=true},
             new Content{page_Id=2,content="Chicken",visible=true}
             };
-            pages.ForEach(s => context.Pages.Add(s));
+            content.ForEach(s => context.Content.Add(s));
             context.SaveChanges();
 
             var users = new List<Users>
