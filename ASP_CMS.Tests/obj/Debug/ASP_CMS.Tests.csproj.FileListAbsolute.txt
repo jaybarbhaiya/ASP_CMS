@@ -23,3 +23,5 @@ C:\Users\Jay Barbhaiya\Documents\Visual Studio 2013\Projects\ASP_CMS\ASP_CMS.Tes
 C:\Users\Jay Barbhaiya\Documents\Visual Studio 2013\Projects\ASP_CMS\ASP_CMS.Tests\obj\Debug\ASP_CMS.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Jay Barbhaiya\Documents\Visual Studio 2013\Projects\ASP_CMS\ASP_CMS.Tests\obj\Debug\ASP_CMS.Tests.dll
 C:\Users\Jay Barbhaiya\Documents\Visual Studio 2013\Projects\ASP_CMS\ASP_CMS.Tests\obj\Debug\ASP_CMS.Tests.pdb
+C:\Users\Jay Barbhaiya\Documents\Visual Studio 2013\Projects\ASP_CMS\ASP_CMS.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Jay Barbhaiya\Documents\Visual Studio 2013\Projects\ASP_CMS\ASP_CMS.Tests\bin\Debug\EntityFramework.xml
