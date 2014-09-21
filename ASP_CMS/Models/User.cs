@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ASP_CMS.Models
 {
-    public class Users
+    public class User
     {
         public int Id { get; set; }
         public string first_name { get; set; }

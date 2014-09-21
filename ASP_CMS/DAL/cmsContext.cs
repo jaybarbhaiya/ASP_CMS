@@ -11,10 +11,9 @@ namespace ASP_CMS.DAL
         {
         }
 
-        public DbSet<Subjects> Subjects { get; set; }
-        public DbSet<Pages> Pages { get; set; }
-        public DbSet<Users> Users { get; set; }
-        public DbSet<Content> Content { get; set; } 
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Page> Pages { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }

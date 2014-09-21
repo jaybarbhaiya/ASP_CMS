@@ -3,13 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ASP_CMS.Models
 {
-    public class Content
+    public class Subject
     {
         public int Id { get; set; }
-        public int page_Id { get; set; }
-        public string content { get; set; }
+        public string name { get; set; }
+        public int position { get; set; }
         public bool visible { get; set; }
 
-        public virtual ICollection<Pages> Pages { get; set; }
+        public virtual ICollection<Page> Pages { get; set; }
     }
 }

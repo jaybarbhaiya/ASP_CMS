@@ -28,12 +28,12 @@ namespace ASP_CMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Subjects subjects = db.Subjects.Find(id);
-            if (subjects == null)
+            Subject subject = db.Subjects.Find(id);
+            if (subject == null)
             {
                 return HttpNotFound();
             }
-            return View(subjects);
+            return View(subject);
         }
 
         // GET: Subjects/Create
@@ -47,16 +47,16 @@ namespace ASP_CMS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,name,position,visible")] Subjects subjects)
+        public ActionResult Create([Bind(Include = "Id,name,position,visible")] Subject subject)
         {
             if (ModelState.IsValid)
             {
-                db.Subjects.Add(subjects);
+                db.Subjects.Add(subject);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(subjects);
+            return View(subject);
         }
 
         // GET: Subjects/Edit/5
@@ -66,12 +66,12 @@ namespace ASP_CMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Subjects subjects = db.Subjects.Find(id);
-            if (subjects == null)
+            Subject subject = db.Subjects.Find(id);
+            if (subject == null)
             {
                 return HttpNotFound();
             }
-            return View(subjects);
+            return View(subject);
         }
 
         // POST: Subjects/Edit/5
@@ -79,15 +79,15 @@ namespace ASP_CMS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,name,position,visible")] Subjects subjects)
+        public ActionResult Edit([Bind(Include = "Id,name,position,visible")] Subject subject)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(subjects).State = EntityState.Modified;
+                db.Entry(subject).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(subjects);
+            return View(subject);
         }
 
         // GET: Subjects/Delete/5
@@ -97,12 +97,12 @@ namespace ASP_CMS.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Subjects subjects = db.Subjects.Find(id);
-            if (subjects == null)
+            Subject subject = db.Subjects.Find(id);
+            if (subject == null)
             {
                 return HttpNotFound();
             }
-            return View(subjects);
+            return View(subject);
         }
 
         // POST: Subjects/Delete/5
@@ -110,8 +110,8 @@ namespace ASP_CMS.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Subjects subjects = db.Subjects.Find(id);
-            db.Subjects.Remove(subjects);
+            Subject subject = db.Subjects.Find(id);
+            db.Subjects.Remove(subject);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
